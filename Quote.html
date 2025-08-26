@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+</head>
+<body>
+    <header>
+        <h1>Clean Touch</h1>
+        <img src="clean touch logo.jpg" alt="Clean Touch Logo" width="200px" height="auto" />
+    <!-- Navigation bar -->
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Quote.html">Get a Quote</a></li>
+          <li><a href="signin.html" target="_blank">
+            <img src="user.png" style="width: 50px; height: auto" alt=" Sign In"/></a></li>
+        </ul>
+            <hr>
+        </nav>
+    </header>
+
+    <!-- Main content-->
+    <main>
+        <h2>Get a Quote</h2>
+        <p>Please fill out the form below to receive a personalized quotes for our cleaning services.</p>
+        <form action="submit_quote.php" method="post">
+            <fieldset>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="name">Surname:</label><br>
+            <input type="text" id="Surname" name="Surname" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Enter a phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="+27 " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+            <label for="service"><Service>
+            <Package></Package> Required:</label><br>
+            <select id="service" name="service">
+                <option value="home_cleaning">Basic Package</option>
+                <option value="LivingArea_cleaning">Enterprise</option>
+                <option value="bedroom_cleaning">Grootman Package</option>
+                <option value="bathroom_cleaning">Vehicle Detailing</option>
+                <option value="vehicle_cleaning">Custom Package</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <input type="submit" value="Get Quote">
+            </fieldset>
+        </form>
+
+    <hr>
+    <footer>
+         <p>2025 Clean Touch™. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+
+
+
+</html>
