@@ -1,48 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-</head>
-<body>
-    <header>
-        <h1>Clean Touch</h1>
-        <img src="clean touch logo.jpg" alt="Clean Touch Logo" width="200px" height="auto" />
-         <!-- Navigation bar -->
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="Quote.html">Get a Quote</a></li>
-          <li><a href="signin.html" target="_blank">
-            <img src="user.png" style="width: 50px; height: auto" alt=" Sign In"/></a></li>
-        </ul>
-            <hr>
+<div lang="en">    
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gallery</title>
+      <link rel="stylesheet" href="CSS/gallery3.css"/>
+  </head>
+  <body>
+      <header>
+          <!-- Navigation bar -->
+        <nav class="nav-container">
+          <div class="navbar">
+            <ul class="nav-list">
+              <li class="logo">
+                <img src="Logo with text.png" alt="Clean Touch Logo" width="200px" height="auto" />
+              </li>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="Quote.html">Get a Quote</a></li>
+              <!-- Sign in on the far right side of the nav-->
+              <ul class="right-side">
+                <li><a href="signin.html">
+                  <img src="user.png" alt="Sign In" style="height: 28px;" />
+                </a>
+                </li>
+              </ul>
+            </ul>
+          </div>
         </nav>
-    </header>
-</body>
+      </header>
+  </body>
 
-        <!-- Previous Page-->
-        <a href="gallery continued.html">Previous Page</a>
-        <!-- Before result-->
-        <img src="images/AdobeStock_506161807_living room before.jpeg" alt="Dirty living room" width="300px" height="auto">
-        <!-- After result-->        
-        <img src="images/AdobeStock_506161807_living room after.jpeg" alt="Clean living room" width="300px" height="auto"
-<br> 
-        <!-- Before result-->
-        <img src="images/interior before.jpeg" alt="Dirty car" width="300px" height="auto">
-        <!-- After result-->
-        <img src="images/interior after.jpeg" alt="Clean car" width="300px" height="auto">
+      <h2>Hover over the images to see the after results when you choose Clean Touch</h2>
 
 
+    <div class="gallery-container">
+            <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+           <img src="images/AdobeStock_506161807_living room before.jpeg" alt="Dirty living room" width="300px" height="auto">
+          </div>
+          <div class="flip-card-back">
+            <img src="images/AdobeStock_506161807_living room after.jpeg" alt="Clean living room" width="300px" height="auto">
+          </div>
+        </div>
+      </div>
 
-</html>
-    <hr>
-    <footer>
+      <!-- Kitchen Flip Card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+           <img src="images/interior before.jpeg" alt="Dirty car" width="300px" height="auto">
+          </div>
+          <div class="flip-card-back">
+           <img src="images/interior after.jpeg" alt="Clean car" width="300px" height="auto">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Previous Page-->
+      <div class="next-button-container">
+        <a href="gallery continued.html" class="Back-button">← Previous Page </a>
+      </div>
+
+      <!-- Footer -->
+      <footer>
          <p>2025 Clean Touch™. ALL RIGHTS RESERVED</p>
     </footer>
 </html>

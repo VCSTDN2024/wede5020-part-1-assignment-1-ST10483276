@@ -4,90 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link rel="stylesheet" href="CSS/about.css" />
   </head>
   <body>
     <header>
-      <h1>Clean Touch</h1>
-      <img src="clean touch logo.jpg" alt="Clean Touch Logo" width="200px" height="auto" />
-          <!-- Navigation bar -->
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="Quote.html">Get a Quote</a></li>
-          <li><a href="signin.html" target="_blank">
-            <img src="user.png" style="width: 50px; height: auto" alt=" Sign In"/></a></li>
-        </ul>
-        <hr />
+      <!-- Navigation bar -->
+      <nav class="nav-container">
+        <div class="navbar">
+          <ul class="nav-list">
+            <li class="logo">
+              <img
+                src="Logo with text.png"
+                alt="Clean Touch Logo"
+                width="200px"
+                height="auto"
+              />
+            </li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Quote.html">Get a Quote</a></li>
+            <!-- Sign in on the far right side of the nav-->
+            <li class="right-side">
+              <a href="signin.html">
+                <img src="user.png" alt="Sign In" style="height: 28px" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <br />
 
-    <!-- Main content-->    
+    <!-- Main content-->
     <main>
-      <p>
+      <h4>
         At Clean Touch, we believe that a true clean space is a healthy and
         renewing one. While standard cleaning keeps the space tidy, we go beyond
         that to ensure a deep clean that promotes well-being.
-      </p>
-      <ul>
-        <!-- List of services offered -->
-        <img src="Images/cleaning-kitchen.jpg" alt="cleaning service" width="auto" height="auto"/>
-        <li>
-          <b>Kitchens:</b>We degrease stove tops and back splashes, scrub and
-          disinfect sinks, and thoroughly clean the interior and exterior of
-          equipment such as ovens, microwaves, and refrigerators. We will also
-          clean the cabinet exteriors and baseboards to guarantee that no detail
-          is ignored.
-        </li>
-        <img src="Images/GettyImages-1224808645-8c50b5d0099e4eb8a8d591321787237b.webp" alt="cleaning service" width="auto" height="auto"/>
-        <li>
-          <b>Bathrooms:</b>We focus on sanitation and disinfection. This
-          includes washing grout lines, cleaning and descaling shower heads and
-          faucets, sanitizing toilets, and polishing mirrors and fixtures until
-          they shine.
-        </li>
-        <img src="Images/855cdd0b-e6c0-4508-b1a5-9c32f38dc223.png" alt="cleaning service" width="auto" height="auto"/>
-        <li>
-          <b>Living Area & Bedrooms:</b>Our staff will clean the light fixtures,
-          wipe down all surfaces, and properly dust the curtains and window
-          sills. We invest extra attention to places that are generally
-          overlooked, such as door frames, skirting boards, and corners where
-          dust tend to hide.
-        </li>
-        <img
-          src="Images/Commercial-Floor-Cleaning-Services-1-1080x675.jpg"
-          alt="cleaning service"
-          width="auto"
-          height="auto"
-        />
-        <li>
-          <b>Flooring:</b>We do more than sweeping and mopping. We will remove
-          solid dirt from the edges and corners, and we will apply specific
-          solutions to restore the shine to hard floors.
-        </li>
-        <img src="Images/car deep cleaning.webp" alt="cleaning service" width="auto" height="auto"
-        />
-        <li>
-          <b>Vehicle exterior and interior:</b>Since your automobile is an
-          extension of who you are, it should be treated with the same respect.
-          We'll vacuum every surface, steam clean and wash upholstery and
-          carpets to get rid of tough stains and smells, and carefully clean and
-          condition any leather, vinyl, and plastic surfaces. In order to leave
-          the interior of your car smelling clean and new, we will also
-          thoroughly clean the outside, door jambs, air vents, and other
-          difficult-to-reach areas.
-        </li>
-      </ul>
+      </h4>
+      <br /><br />
+      <!-- List of services offered -->
+      <div class="profile-container">
+        <!-- Kitchen Card -->
+        <div class="profile-card">
+          <img
+            src="Images/cleaning-kitchen 2.jpg"
+            alt="Kitchen Cleaning Service"
+            class="card-image"
+          />
+          <div class="card-content">
+            <h3>Kitchens</h3>
+            <p>
+              We degrease stove tops and back splashes, scrub and disinfect
+              sinks, and thoroughly clean the interior and exterior of equipment
+              such as ovens, microwaves, and refrigerators. We also clean the
+              cabinet exteriors and baseboards to guarantee that no detail is
+              ignored.
+            </p>
+          </div>
+        </div>
 
-      <p>our products are pet and eco friendly.</p>
+        <!-- Bathroom Card -->
+        <div class="profile-card">
+          <img
+            src="Images/GettyImages-1224808645-8c50b5d0099e4eb8a8d591321787237b.webp"
+            alt="Bathroom Cleaning Service"
+            class="card-image"
+            width="247px"
+            height="165px"
+          />
+          <div class="card-content">
+            <h3>Bathroom</h3>
+            <p>
+              We focus on sanitation and disinfection. This includes washing
+              grout lines, cleaning and descaling shower heads and faucets,
+              sanitizing toilets, and polishing mirrors and fixtures until they
+              shine.
+            </p>
+          </div>
+        </div>
+
+        <!-- Room Card -->
+        <div class="profile-card">
+          <img
+            src="Images/855cdd0b-e6c0-4508-b1a5-9c32f38dc223.png"
+            alt="Room Cleaning Service"
+            class="card-image"
+          />
+          <div class="card-content">
+            <h3>Living Room / Bedrooms</h3>
+            <p>
+              Our staff will clean the light fixtures, wipe down all surfaces,
+              and properly dust the curtains and window sills. We invest extra
+              attention to places that are generally overlooked, such as door
+              frames, skirting boards, and corners where dust tend to hide.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Page Button -->
+      <div class="next-button-container">
+        <a href="about 2.html" class="next-button">Next Page →</a>
+      </div>
     </main>
+    <p>Our products are pet and eco friendly.</p>
 
-    <hr />
+    <!-- Footer -->
     <footer>
       <p>2025 Clean Touch™. ALL RIGHTS RESERVED</p>
     </footer>

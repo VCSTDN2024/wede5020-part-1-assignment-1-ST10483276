@@ -1,0 +1,205 @@
+/* Navigation bar styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.25s ease-out;
+  letter-spacing: 1px;
+}
+
+/* Nav hovering color */
+li a:hover:not(.active) {
+  background-color: #04aa6d;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Image styles */
+.right-side img {
+  height: 20px;
+}
+
+.logo img {
+  display: block;
+  height: auto;
+  width: 200px;
+  margin-right: 20px;
+}
+
+/* Image styles positioning */
+.right-side {
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+/* Call-To-Action Button 1 */
+.About-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px;
+  background: #04aa6d;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: none;
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.About-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.5s ease;
+}
+
+.About-button:hover::before {
+  left: 100%;
+}
+
+.About-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Call-To-Action Button 2 */
+.service-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  border: 2px solid black;
+  cursor: auto;
+  transform: translateY(0);
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.service-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.service-button:hover::before {
+  left: 100%;
+}
+
+.service-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Body styling and background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../Images/iStock-1397696378-scaled-e1734499967447.jpg");
+  background-size: cover;
+}
+
+p {
+  text-align: left;
+  margin-top: 40px;
+  font-size: 25px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Heading 1 Styling */
+h1 {
+  margin-top: 60px;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body positioning */
+.button-container {
+  display: inline-block;
+  margin: 20px;
+}
+
+.button-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}

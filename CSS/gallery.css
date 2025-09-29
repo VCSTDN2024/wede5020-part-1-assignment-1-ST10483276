@@ -1,0 +1,167 @@
+/* Navigation bar styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.25s ease-out;
+  letter-spacing: 1px;
+}
+
+/* Nav hovering color */
+li a:hover:not(.active) {
+  background-color: #04aa6d;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Image styles */
+.right-side img {
+  height: 20px;
+}
+
+.logo img {
+  display: block;
+  height: auto;
+  width: 200px;
+  margin-right: 20px;
+}
+
+/* Image styles positioning */
+.right-side {
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+/* Gallery container (Layout) */
+.gallery-container {
+  display: flex; /* Aligns and wraps the cards */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+/* Flips cards  */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 390px;
+  perspective: 1000px; /* This enables the 3D flip */
+  cursor: pointer; /* Element interaction */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s; /* This is the speed of the flip animation */
+  transform-style: preserve-3d;
+}
+
+/* Enables the 3D flip animation on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Rotates the element by 180° in a Y-axis */
+}
+
+/* Card faces (Front and Back content) */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back side of the card when it's flipped over when hovered on */
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Call-To-Action Button */
+.next-button-container {
+  text-align: center;
+  margin: 90px 0;
+}
+
+.next-button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3 ease;
+}
+
+.next-button:hover {
+  background-color: #0056be;
+}
+
+/* Heading 2 styling */
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Footer style*/
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: 2rem;
+}

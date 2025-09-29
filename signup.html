@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-</head>
-
-    <h1>Clean Touch</h1>
-      <img src="clean touch logo.jpg" alt="Clean Touch Logo" width="200px" height="auto" />
-      <!-- Navigation bar -->
-      <nav class="navbar">
+    <link rel="stylesheet" href="CSS/signup.css" />
+  </head>
+  <header>
+    <!-- Navigation bar -->
+    <nav class="nav-container">
+      <div class="navbar">
         <ul class="nav-list">
+          <li class="logo">
+            <img
+              src="Logo with text.png"
+              alt="Clean Touch Logo"
+              width="200px"
+              height="auto"
+            />
+          </li>
           <li><a href="Index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="Quote.html">Get a Quote</a></li>
-          <li><a href="signin.html" target="_blank">
-            <img src="user.png" style="width: 50px; height: auto" alt=" Sign In"/></a></li>
+          <!-- Sign in on the far right side of the nav-->
+          <ul class="right-side">
+            <li>
+              <a href="signin.html">
+                <img src="user.png" alt="Sign In" style="height: 28px" />
+              </a>
+            </li>
+          </ul>
         </ul>
-        <hr />
-      </nav>
-    </header>
-    <br />
+      </div>
+    </nav>
+  </header>
+  <br />
 
-    <!-- Sign up-->
-    <form action="signin.html" method="post">
-        <label for="Name">Name:</label>
-        <input type="text" id="Name" name="Name" required>
-        <br><br>
-        <label for="Name">Surname:</label>
-        <input type="text" id="Surname" name="Surname" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="signin.html">Sign in</a></p>
-    </form>
+  <!-- Sign up-->
+  <form action="signin.html" method="post">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name" required />
+    <br /><br />
+    <label for="Name">Surname:</label>
+    <input type="text" id="Surname" name="Surname" required />
+    <br /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+    <br /><br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+    <br /><br />
 
-   <hr>
-     <footer>
-         <p>2025 Clean Touch™. ALL RIGHTS RESERVED</p>
-    </footer>
+    <button type="submit" class="btn">Create Account</button>
 
+    <p>Already have an account? <a href="signin.html">Sign in</a></p>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>2025 Clean Touch™. ALL RIGHTS RESERVED</p>
+  </footer>
 </html>
