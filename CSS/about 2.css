@@ -168,28 +168,3 @@ footer {
   width: 98%;
 }
 
-/* adjustments */
-@media (max-width: 768px) {
-  .profile-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    height: auto;
-    max-height: 800px;
-  }
-
-  body {
-    padding: 10px;
-  }
-
-  .card-image {
-    height: 150px;
-  }
-
-  .card-content {
-    padding: 10px;
-  }
-
-  .profile-card {
-    min-height: 500px; /* Card sizing */
-  }
-}
