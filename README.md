@@ -17,12 +17,6 @@
 The use of CSS (Cascading Style Sheet) is to enhance the website's aesthetic appeal, Consistency, and flexibility across the pages.
 In order to ensure an effortless user experience, it regulates layout, spacing, color, alignment, and interactions.
 
-
-### Screenshots (Global Styles)  
-
-
----
-
 ## 2. Navigation Bar
 - In a floating position for an aesthetic appeal.
 - Shadow effect on the nav bar.
@@ -36,8 +30,8 @@ In order to ensure an effortless user experience, it regulates layout, spacing, 
 - Headings styled with **bold fonts, large sizes, and orange highlights**.  
 - CTA button with **padding, rounded corners, hover effects**.  
 
-📸 **Screenshot (Hero Banner with the navigation)**  
-<img width="487" height="660" alt="Screenshot 2025-09-29 153344" src="" />  
+**Screenshot (Hero Banner with the navigation)**  
+![Screenshot](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/raw/master/Screenshots/Screenshot%202025-09-29%20192807.png)
 
 ---
 # Types of cards
@@ -48,22 +42,23 @@ In order to ensure an effortless user experience, it regulates layout, spacing, 
 - Hover effects for interactivity 
 -  3D flip showing the before results and when hovered on, it will show the after results
 - Images will stack like a slideshow on more smaller screens like a phone.
-
+![Screenshot](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/blob/master/Screenshots/Screenshot%202025-09-29%20193221.png)
 ---
 
-## 4.2 Cards (Service card)  
+## 4.2 Cards (Service card and about us cards)  
 - Has a more modern and minimaliostic look and color scheme with a light gray background.  
 - Has a green border/ outline on the left side to represent the branding that the company goes by.  
-
+![Screenshot](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/blob/master/Screenshots/Screenshot%202025-09-29%20192826.png)
+![Screenshot](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/blob/master/Screenshots/Screenshot%202025-09-29%20193013.png)
 ---
 
 ## 5. Typography  
 - **Headings**: Large, bold, and appealing.  
 - **Paragraphs**: Readable font size + spacing.  
 - **Font family** Mostly using the 'Arial' font family as the body and paragraph and the 'Segoe uI' for the Navigation  
-
+![Screenshot]
 ---
-# Types of cards
+# Types of forms
 ## 6.1 Forms (Quote)  
 - Inputs styled with **padding, borders, coloring and rounded corners**.  
 - **Focus effect** highlights fields while typing.  
@@ -73,9 +68,10 @@ In order to ensure an effortless user experience, it regulates layout, spacing, 
 - **Focus effect** highlights fields while typing.  
 - Easy to read and user friendly
 - A primamry "Sign in" and "Sign in" and "Create an account" button in a bright green color
+  
+**Form Screenshots**  
+![Screenshot](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/blob/master/Screenshots/Screenshot%202025-09-29%20195524.png)
 
-📸 **Form Screenshots**  
- 
 ---
 
 ## 7. Footer  
@@ -161,7 +157,5 @@ icons
 To clonclude, The Clean Touch website is now consistent across all the pages thanks to the CSS development.
 
 - Modern and aesthetically pleasing.
-
-- Completely responsive to mobile,tablet, and the desktop.
-
+- Compatable with other dedicated devices.
 -  interactive with focus and hover effects.
