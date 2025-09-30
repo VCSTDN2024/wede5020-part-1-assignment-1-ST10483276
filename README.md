@@ -5,7 +5,7 @@
 
 **Group:** 1
 
-**Course**: Higher Certificate Mobile Development and Web Application 
+**Course**: Higher Certificate Mobile Application and Web Development 
 
 **Module:** Web Development (Introduction) WEDE5020
 
