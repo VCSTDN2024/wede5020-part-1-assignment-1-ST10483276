@@ -138,15 +138,74 @@ input [type="sumbit"] {
   background-color: #0056b3;
 }
 
-/* Footer style*/
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-  margin-top: 2rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+/* Footer */
+.main-footer {
+  background: #D9D9D9;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  width: 98.49%;
+  margin-left: -10px;
+  margin-top: 64px;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 99px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-left: -100px;
+  margin-right: auto;}
+
+.footer-social a img {
+  width: 40px;
+  height: 40px;
+  filter:hue-rotate(50%);
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.footer-social a img:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.footer-right {
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+  position: absolute;
+  right: 53%;
+  color: black;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.copy-right {
+  font-size: 0.9rem;
+  position: absolute;
+  right: 45%;
+  margin-right: -100px;
+  bottom: 0px;
+  color: black;
+  font-weight: bold;
+}
+
