@@ -1,60 +1,49 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("quoteForm");
+  const resultDiv = document.getElementById("quoteResult");
 
-  const packagePrices = {
-    home_cleaning: 350,          // Basic Package
-    LivingArea_cleaning: 700,    // Enterprise
-    bedroom_cleaning: 1200,      // Grootman Package
-    bathroom_cleaning: 500,      // Vehicle Detailing
-    vehicle_cleaning: 950,       // Custom Package
-    Custom: 0                     // Will ask for details
-  };
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form refresh
-
-    const name = document.getElementById("name").ariaValueMax.trim();
+    // Collect form data
+    const name = document.getElementById("name").value.trim();
     const surname = document.getElementById("Surname").value.trim();
     const email = document.getElementById("email").value.trim();
     const phone = document.getElementById("phone").value.trim();
     const address = document.getElementById("address").value.trim();
     const service = document.getElementById("service").value;
 
-    // Calculate price
-    const price = packagePrices[service];
-
-    // Generate message
-    let message = "";
-    if (price > 0) {
-      message = `
-        <p>Thank you, ${name} ${surname}, for requesting a quote!</p>
-        <p>Service Selected: ${service.replace(/_/g, ' ')}</p>
-        <p>Estimated Price: R${price.toFixed(2)}</p>
-        <p>We will contact you shortly at ${email} or ${phone}.</p>
-      `;
-    } else {
-      message = `
-        Hello ${name} ${surname},\n
-        You selected “Other”. Please describe your cleaning needs in our contact form,
-        and we’ll send you a custom quote.
-      `;
+    // Basic validation
+    if (!name || !surname || !email || !phone || !address || !service) {
+      resultDiv.textContent = "Please fill in all required fields.";
+      resultDiv.style.color = "red";
+      return;
     }
 
-        // Display quote in an alert (you can replace this with a custom modal or div)
-    document.getElementById("quoteResult").textContent = message;
-  });
+    // Format phone number (optional: enforce +27 format)
+    const formattedPhone = phone.startsWith("+27") ? phone : "+27 " + phone;
 
-  // Helper to get readable package name
-  function getPackageName(serviceKey) {
-    const names = {
+    // Create a mock quote message
+    const serviceNames = {
       home_cleaning: "Basic Package",
-      LivingArea_cleaning: "Enterprise Package",
+      LivingArea_cleaning: "Enterprise",
       bedroom_cleaning: "Grootman Package",
       bathroom_cleaning: "Vehicle Detailing",
       vehicle_cleaning: "Custom Package",
       other: "Other"
     };
-    return names[serviceKey] || "Unknown Package";
-  }
-});
 
+    const selectedService = serviceNames[service] || "Unknown Package";
+
+    resultDiv.style.color = "green";
+    resultDiv.innerHTML = `
+      Thank you, <strong>${name} ${surname}</strong>!<br>
+      We've received your request for the <strong>${selectedService}</strong>.<br>
+      A quote will be sent to <strong>${email}</strong> and we'll follow up at <strong>${formattedPhone}</strong>.<br>
+      Our team will reach out to <strong>${address}</strong> soon!
+    `;
+
+    // Optionally reset the form
+    form.reset();
+  });
+});
