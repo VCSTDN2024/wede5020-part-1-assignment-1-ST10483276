@@ -1,13 +1,14 @@
-  window.addEventListener('DOMContentLoaded', () => {
-    const elements = [
-      document.querySelector('p'),
-      ...document.querySelectorAll('h1'),
-      ...document.querySelectorAll('.button-container')
-    ];
+window.addEventListener('DOMContentLoaded', () => {
+  const elements = [
+    document.querySelector('p'),
+    ...document.querySelectorAll('h1'),
+    ...document.querySelectorAll('.button-container')
+  ];
 
-    let delay = 0;
+  let delay = 0;
 
-    elements.forEach((el, i) => {
+  elements.forEach((el) => {
+    if (el) {
       el.style.display = 'none'; // hide initially
 
       setTimeout(() => {
@@ -15,5 +16,7 @@
       }, delay);
 
       delay += 950; // adjust timing (ms) between each reveal
-    });
+    }
   });
+});
+

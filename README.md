@@ -1,5 +1,5 @@
 # Clean Touch ReadMe file
-**Date:** 29 September 2025
+**Date:** 03 November 2025
 
 **Student Number**: ST10483276
 
@@ -150,6 +150,7 @@ icons
 - flip card animations
 - aligments
 - Hero-Section
+<<<<<<< HEAD
 
 ---
 # 10. Change
@@ -164,10 +165,35 @@ icons
 
 |       2025-11-03      | Added location reference for main building                                     | Contact.html                 |
 
+  
 ---
+
 # 10. Conclusion
 To clonclude, The Clean Touch website is now consistent across all the pages thanks to the CSS development.
 
 - Modern and aesthetically pleasing.
 - Compatable with other dedicated devices.
 -  interactive with focus and hover effects.
+
+---
+# 11. Changelog (03 November 2025)
+| Date       | Update Summary                                                                   | Files Modified             |
+|------------|----------------------------------------------------------------------------------|----------------------------|
+|      2025-10-31       | Navigation links now open in new tab                                           | All html files                 |
+|          2025-11-01   | Updated footer layout and social icons                                         | All html & css files      |
+|        2025-11-01     | Styled quote button with border and green hover effect                         | quote.css                  |
+|       2025-11-02             | Added quote calculation logic with validation, summary, and localStorage       | quote.js                   |
+|                       | Displayed service prices below each checkbox                                   | quote.html                 |
+|                       | Javascript transitions                                  | Index.html           |
+|                       |Added small extra CSS and consolidated JS file to reduce inline scripts.        |
+|     2025-11-03                  | Added location reference for main building                                     | Contact.html                 |    
+
+---
+# 12. References 📚 
+- https://www.javascripttutorial.net/
+- https://www.w3schools.com/js/
+- https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/
+- https://freefrontend.com/
+- https://github.com/jesselsookha/WEDE2025/tree/main/examples
+-
+-
