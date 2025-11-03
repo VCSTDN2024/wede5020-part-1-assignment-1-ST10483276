@@ -64,19 +64,10 @@ body {
   height: 20px;
 }
 
-.logo img {
-  display: block;
+.logo img,
+.right-side img {
+  max-width: 100%;
   height: auto;
-  width: 200px;
-  margin-right: 20px;
-}
-
-/* Image styles positioning */
-.right-side {
-  list-style-type: none;
-  display: inline-block;
-  text-decoration: none;
-  margin-left: auto;
 }
 
 /* Profile card layout */
@@ -153,6 +144,9 @@ body {
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .next-button:hover {
@@ -228,4 +222,51 @@ body {
   bottom: 0px;
   color: black;
   font-weight: bold;
+}
+
+p {
+  font-size: larger;
+  font-weight: 500;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main p {
+  transition: color 0.3s ease;
+}
+main p:hover {
+  color: #04aa6d;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer-links,
+  .copy-right {
+    position: static;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .next-button-container {
+    margin-top: 0;
+  }
 }
