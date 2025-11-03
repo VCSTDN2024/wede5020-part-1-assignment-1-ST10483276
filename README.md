@@ -9,7 +9,7 @@
 
 **Module:** Web Development (Introduction) WEDE5020
 
-📂 **GitHub Repository Link:** https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276.git
+📂 **GitHub Repository Link:** [https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276.git](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/tree/master)
 
 ---
 
