@@ -132,6 +132,19 @@ signin.css
 
 signup.css
 
+### Javascript📁
+about.js
+
+gallery.js
+
+index.js
+
+Main.js
+
+quote.js
+
+service.js
+
 ### Images📁
 pictures needed for the website
 
