@@ -179,21 +179,32 @@ To clonclude, The Clean Touch website is now consistent across all the pages tha
 # 11. Changelog (03 November 2025)
 | Date       | Update Summary                                                                   | Files Modified             |
 |------------|----------------------------------------------------------------------------------|----------------------------|
-|      2025-10-31       | Navigation links now open in new tab                                           | All html files                 |
-|          2025-11-01   | Updated footer layout and social icons                                         | All html & css files      |
-|        2025-11-01     | Styled quote button with border and green hover effect                         | quote.css                  |
-|       2025-11-02             | Added quote calculation logic with validation, summary, and localStorage       | quote.js                   |
-|                       | Displayed service prices below each checkbox                                   | quote.html                 |
-|                       | Javascript transitions                                  | Index.html           |
-|                       |Added small extra CSS and consolidated JS file to reduce inline scripts.        |
-|     2025-11-03                  | Added location reference for main building                                     | Contact.html                 |    
+|                2025-10-31       | Navigation links now open in new tab                                           | All html files                |
+|                    2025-11-01   | Updated footer layout and social icons                                         | All html & css files          |
+|                  2025-11-01     | Styled quote button with border and green hover effect                         | quote.css                     |
+|          2025-11-02             | Added quote calculation logic with validation, summary, and localStorage       | quote.js                      |
+|       2025-11-02                | Displayed service prices below each checkbox                                   | quote.html                    |
+|       2025-11-02                | Javascript transitions                                                         | Index.html                    |                               
+|       2025-11-02                | Javascript animations                                                          | Index.html                    |                               
+|     2025-11-02                  |Added small extra CSS and consolidated JS file to reduce inline scripts.        |                               |     
+|     2025-11-03                  | Added location reference for main building with styling                        | Contact.html                  |  
+|     2025-11-03                  | Made the screens responsive to a mobile device                                 | All css pages                 |
+|     2025-11-03                  | Added more clarity on the Alt tag of pictures                                  | All html images                 |
+
+
 
 ---
 # 12. References 📚 
-- https://www.javascripttutorial.net/
-- https://www.w3schools.com/js/
-- https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/
-- https://freefrontend.com/
-- https://github.com/jesselsookha/WEDE2025/tree/main/examples
--
--
+
+- JavaScriptTutorial.net. *JavaScript Tutorial*. Available at: https://www.javascripttutorial.net/ 
+
+- W3Schools. *JavaScript Tutorial*. Available at: https://www.w3schools.com/js/ 
+
+- MDBootstrap. *25 Bootstrap Footers – Free Examples & Easy Customization*. Available at: https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/ 
+
+- FreeFrontend. *FreeFrontend – Curated Front-End Snippets*. Available at: https://freefrontend.com/ 
+
+- Jessel Sookha. *WEDE2025/examples at main · GitHub*. Available at: https://github.com/jesselsookha/WEDE2025/tree/main/examples 
+
+- YouTube. (2023). *24 | MAKE A WEBSITE RESPONSIVE FOR ALL DEVICES | Learn HTML and CSS Full Course for Beginners*. Available at: https://youtu.be/UUjNEMXZA-k?si=op-BVjCoIf-rGBV1 
+
