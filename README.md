@@ -151,6 +151,18 @@ icons
 - aligments
 - Hero-Section
 
+---
+# 10. Change
+| Date       | Update Summary                                                                 | Files Modified             |
+|------------|----------------------------------------------------------------------------------|----------------------------|
+|      2025-10-31       | Navigation links now open in new tab                                           | All html files                 |
+|          2025-11-01   | Updated footer layout and social icons                                         | All html & css files      |
+|        2025-11-03     | Styled quote button with border and green hover effect                         | quote.css                  |
+|  2025-11-03| Added quote calculation logic with validation, summary, and localStorage       | quote.js                   |
+|        2025-11-03     | Displayed service prices below each checkbox                                   | quote.html                 |
+|        2025-11-03     | Javascript transitions                                  | Index.html                 |
+
+|       2025-11-03      | Added location reference for main building                                     | Contact.html                 |
 
 ---
 # 10. Conclusion
