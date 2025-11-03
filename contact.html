@@ -32,11 +32,16 @@
         </div>
       </nav>
     </header>
-  </body>
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script defer src="/Javascript/Main.js"></script>
+</body>
 
   <!-- Newsletter-->
   <div class="container">
-    <form action="subscribe.php" method="post">
+    <form action="subscribe.php" method="post" id="mainForm" data-mailto="info@example.org" data-subject="Website enquiry" data-ajax="false">
       <h5>Subscribe to our newsletter:</h5>
       <b><label for="name">Name:</label></b
       ><br />
@@ -59,7 +64,8 @@
       /><br /><br />
 
       <input type="submit" value="Subscribe" />
-    </form>
+    <div class="form-status" aria-live="polite" style="margin-top:8px;color:green;"></div>
+</form>
     <!-- Contact infor section on the right side-->
     <div class="contact-info">
       <h2>Know more</h2>
@@ -68,11 +74,11 @@
         Email us: <a href="mailto:CleanTouch@jhb.co.za">CleanTouch@jhb.co.za</a>
       </p>
       <p>Or call us at: <a href="tel:+0607740545">+27607740545</a></p>
-  
     </div>
   </div>
 
-<h3>Find our Office locations below:</h3>
+
+<h2 style="text-align: center;">Find our Office locations below:</h2>
 <div class="map-grid">
   <div class="map-item">
     <h3>Sandton Office</h3>
@@ -109,3 +115,4 @@
     </div>
   </div>
 </footer>
+</html>

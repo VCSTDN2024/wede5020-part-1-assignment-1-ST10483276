@@ -44,7 +44,6 @@ li {
   letter-spacing: 1px;
 }
 
-/* Nav hovering color */
 li a:hover:not(.active) {
   background-color: #04aa6d;
 }
@@ -55,38 +54,29 @@ li a:hover:not(.active) {
 
 /* Body styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../Clean touch logo.jpg") opacity(0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Image styles */
-.right-side img {
-  height: 20px;
-}
-
+/* Logo and user icon */
 .logo img {
   display: block;
-  height: auto;
   width: 200px;
+  height: auto;
   margin-right: 20px;
 }
 
-/* Image styles positioning */
 .right-side {
-  list-style-type: none;
   display: inline-block;
-  text-decoration: none;
   margin-left: auto;
 }
 
-
-/* Body styling */
-body {
-  background-image: url("../Clean touch logo.jpg"); /* Update with your actual image path and name */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 900px 900px; /* Adjusted size */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
+.right-side img {
+  height: 28px;
 }
 
 /* Quote form styling */
@@ -94,12 +84,7 @@ form {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  display: block;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
+  padding: 20px;
 }
 
 label {
@@ -113,22 +98,24 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
+  border: 2px solid #2f614f;
+  padding: 10px;
+  width: 600px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin: 20px auto;
+  display: flexbox;
 }
 
-input [type="tel"] {
-  padding-left: 4rem;
+input[type="tel"] {
+  padding-left: 1rem;
 }
 
-.btn {
-  width: 105%;
+/* Quote buttons */
+input[type="button"] {
+  width: 48%;
   padding: 1rem;
+  margin: 10px 1%;
   background-color: #04aa6d;
   color: white;
   border: none;
@@ -137,9 +124,10 @@ input [type="tel"] {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: relative;
 }
 
-.btn::before {
+input[type="button"]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -149,23 +137,121 @@ input [type="tel"] {
   z-index: 0;
 }
 
-.btn:hover::before {
+input[type="button"]:hover::before {
   transform: translateX(0);
 }
 
-.btn:hover {
-  color: white;
+input[type="button"]:hover {
   background-color: #027a4d;
 }
 
-.btn span {
-  position: relative;
-  z-index: 1;
+.calcBtn {
+  padding: 10px 20px;
+  background-color: #027a4d;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #027a4d;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+#calcBtn {
+  background-color: #027a4d;
+  color: white;
+}
+
+#clearBtn {
+  background-color: #027a4d;
+  color: white;
+}
+
+.total-row {
+  border-top: 1px solid #ccc;
+  margin-right: 1099px;
+}
+
+.amount {
+  display: inline-block;
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.discount {
+  color: #c00;
+  font-weight: normal;
+}
+
+.total-amount {
+  color: #003366;
+  font-size: 1.2em;
+}
+
+/* --- MODAL --- */
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #027a4d;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+.modal-content button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Additional styling from previous requests (for alignment within the modal) */
+.quote-details .total-row {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.total-row {
+  border-top: 1px solid #ccc;
+}
+
+.amount {
+  display: inline-block;
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.total-amount {
+  color: #ffffff;
+  font-size: 1.2em;
+}
 /* Footer */
 .main-footer {
-  background: #D9D9D9;
+  background: #d9d9d9;
   padding: 20px;
   color: rgb(0, 0, 0);
   width: 98.49%;
@@ -187,12 +273,13 @@ input [type="tel"] {
   display: flex;
   gap: 16px;
   margin-left: -100px;
-  margin-right: auto;}
+  margin-right: auto;
+}
 
 .footer-social a img {
   width: 40px;
   height: 40px;
-  filter:hue-rotate(50%);
+  filter: hue-rotate(50%);
   opacity: 0.7;
   transition: opacity 0.5s;
 }
@@ -234,3 +321,30 @@ input [type="tel"] {
   font-weight: bold;
 }
 
+.quote-result {
+  display: none;
+  color: black;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#selectedServices {
+  margin: 8px 0;
+}
+
+#totalPrice {
+  font-weight: bold;
+}
+
+.btn-cancel,
+.btn-submit {
+  background-color: #04aa6d;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px; /* Pill shape */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 100px;
+}

@@ -1,49 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("quoteForm");
-  const resultDiv = document.getElementById("quoteResult");
+// Modal functions
+const modal = document.getElementById("submissionModal");
+const modalMessage = document.getElementById("modalMessage");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+function openModal(message) {
+  modalMessage.textContent = message;
+  modal.style.display = "flex"; // Show modal
+}
 
-    // Collect form data
-    const name = document.getElementById("name").value.trim();
-    const surname = document.getElementById("Surname").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const address = document.getElementById("address").value.trim();
-    const service = document.getElementById("service").value;
+function closeModal() {
+  modal.style.display = "none"; // Hide modal
+}
 
-    // Basic validation
-    if (!name || !surname || !email || !phone || !address || !service) {
-      resultDiv.textContent = "Please fill in all required fields.";
-      resultDiv.style.color = "red";
-      return;
-    }
+const form = document.getElementById("joinForm");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    // Format phone number (optional: enforce +27 format)
-    const formattedPhone = phone.startsWith("+27") ? phone : "+27 " + phone;
+  if (!form.checkValidity()) {
+    return;
+  }
 
-    // Create a mock quote message
-    const serviceNames = {
-      home_cleaning: "Basic Package",
-      LivingArea_cleaning: "Enterprise",
-      bedroom_cleaning: "Grootman Package",
-      bathroom_cleaning: "Vehicle Detailing",
-      vehicle_cleaning: "Custom Package",
-      other: "Other"
-    };
+  const name = document.getElementById("name").value;
 
-    const selectedService = serviceNames[service] || "Unknown Package";
+  openModal(`Hello, ${name}! Thank you for choosing The Clean Touch. We will contact you shortly with your quote.`);
 
-    resultDiv.style.color = "green";
-    resultDiv.innerHTML = `
-      Thank you, <strong>${name} ${surname}</strong>!<br>
-      We've received your request for the <strong>${selectedService}</strong>.<br>
-      A quote will be sent to <strong>${email}</strong> and we'll follow up at <strong>${formattedPhone}</strong>.<br>
-      Our team will reach out to <strong>${address}</strong> soon!
-    `;
-
-    // Optionally reset the form
-    form.reset();
-  });
+  form.reset();
 });
