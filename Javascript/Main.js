@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         const body = encodeURIComponent(bodyLines.join('\n'));
         window.location.href = `mailto:${mailto}?subject=${subject}&body=${body}`;
-        if(status) status.textContent = 'Email client opened (if available).';
+        if(status) status.textContent = 'Successfully subscribed.';
         return;
       }
       // Otherwise, simulate AJAX post to /submit (no server): show success message
