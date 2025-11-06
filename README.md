@@ -9,7 +9,7 @@
 
 **Module:** Web Development (Introduction) WEDE5020
 
-📂 **GitHub Repository Link:** https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276.git
+📂 **GitHub Repository Link:** [https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276.git](https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-ST10483276/tree/master)
 
 ---
 
@@ -132,6 +132,19 @@ signin.css
 
 signup.css
 
+### Javascript📁
+about.js
+
+gallery.js
+
+index.js
+
+Main.js
+
+quote.js
+
+service.js
+
 ### Images📁
 pictures needed for the website
 
@@ -150,24 +163,9 @@ icons
 - flip card animations
 - aligments
 - Hero-Section
-<<<<<<< HEAD
 
 ---
-# 10. Change
-| Date       | Update Summary                                                                 | Files Modified             |
-|------------|----------------------------------------------------------------------------------|----------------------------|
-|      2025-10-31       | Navigation links now open in new tab                                           | All html files                 |
-|          2025-11-01   | Updated footer layout and social icons                                         | All html & css files      |
-|        2025-11-03     | Styled quote button with border and green hover effect                         | quote.css                  |
-|  2025-11-03| Added quote calculation logic with validation, summary, and localStorage       | quote.js                   |
-|        2025-11-03     | Displayed service prices below each checkbox                                   | quote.html                 |
-|        2025-11-03     | Javascript transitions                                  | Index.html                 |
-
-|       2025-11-03      | Added location reference for main building                                     | Contact.html                 |
-
-  
----
-
+ 
 # 10. Conclusion
 To clonclude, The Clean Touch website is now consistent across all the pages thanks to the CSS development.
 
@@ -185,11 +183,12 @@ To clonclude, The Clean Touch website is now consistent across all the pages tha
 |          2025-11-02             | Added quote calculation logic with validation, summary, and localStorage       | quote.js                      |
 |       2025-11-02                | Displayed service prices below each checkbox                                   | quote.html                    |
 |       2025-11-02                | Javascript transitions                                                         | Index.html                    |                               
-|       2025-11-02                | Javascript animations                                                          | Index.html                    |                               
+|       2025-11-02                | Javascript animations                                                          | Index.html                    | 
+|       2025-11-02                | Javascript hover effect                                                        | about.html                    |  
 |     2025-11-02                  |Added small extra CSS and consolidated JS file to reduce inline scripts.        |                               |     
 |     2025-11-03                  | Added location reference for main building with styling                        | Contact.html                  |  
 |     2025-11-03                  | Made the screens responsive to a mobile device                                 | All css pages                 |
-|     2025-11-03                  | Added more clarity on the Alt tag of pictures                                  | All html images                 |
+|     2025-11-03                  | Added more clarity on the Alt tag of pictures                                  | All html images               |
 
 
 
