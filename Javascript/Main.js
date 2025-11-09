@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       // Otherwise, simulate AJAX post to /submit (no server): show success message
-      if(status) status.textContent = 'Submission received (client-side demo).';
+      if(status) status.textContent = 'Successfully subscribed..';
       // reset if desired:
       // form.reset();
     });
